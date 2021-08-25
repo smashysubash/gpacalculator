@@ -42,5 +42,6 @@ function compute(){
     var points = (c1*g1)+(c2*g2)+(c3*g3)+(c4*g4)+(c5*g5)+(c6*g6)+(c7*g7)+(c8*g8)+(c9*g9)+(c10*g10);
     var credits =parseFloat(c1)+parseFloat(c2)+parseFloat(c3)+parseFloat(c4)+parseFloat(c5)+parseFloat(c6)+parseFloat(c7)+parseFloat(c8)+parseFloat(c9)+parseFloat(c10);
     var cgpa = points/credits;
-    document.getElementById("result").innerHTML="You have scored <mark>"+cgpa+" </mark> CGPA " +points+" points" +credits;
+    cgpa = cgpa.toFixed(2);
+    document.getElementById("result").innerHTML="You have scored <mark>"+cgpa+" </mark> CGPA ";
 }
