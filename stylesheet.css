@@ -23,7 +23,7 @@ body{
 .btn:hover{
     color: white;
 }
-h2{
+h1{
     text-align: center;
     background: -webkit-linear-gradient( 45deg, rgb(12, 63, 233), lime);
     -webkit-background-clip: text;
@@ -32,6 +32,9 @@ h2{
 }
 input{
     width: 50px;
+}
+input.subj{
+    width: 70px;
 }
 table{
     width: 400px;
