@@ -49,8 +49,6 @@ table{
 .edtxt{
     float: right;
     position: relative;
-    top: 50px;
-    left: 140px;
 }
 div.contact{
     position: fixed;
@@ -72,4 +70,7 @@ a{
     table{
         width: 300px;
     }   
+    .edtxt{
+        left:10px;
+    }
 }

@@ -43,5 +43,9 @@ function compute(){
     var credits =parseFloat(c1)+parseFloat(c2)+parseFloat(c3)+parseFloat(c4)+parseFloat(c5)+parseFloat(c6)+parseFloat(c7)+parseFloat(c8)+parseFloat(c9)+parseFloat(c10);
     var cgpa = points/credits;
     cgpa = cgpa.toFixed(2);
+    if(cgpa=="NaN"){
+        alert("Enter enough values");
+    }else{
     document.getElementById("result").innerHTML="You have scored <mark>"+cgpa+" </mark> CGPA ";
+    }
 }
