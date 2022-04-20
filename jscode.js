@@ -9,6 +9,11 @@ function compute(){
     var c8 = document.getElementById("credit8").value;
     var c9 = document.getElementById("credit9").value;
     var c10 = document.getElementById("credit10").value;
+    var c11 = document.getElementById("credit11").value;
+    var c12 = document.getElementById("credit12").value;
+    var c13 = document.getElementById("credit13").value;
+    var c14 = document.getElementById("credit14").value;
+    var c15 = document.getElementById("credit15").value;
     var g1 = document.getElementById("grade1").value;
     var g2 = document.getElementById("grade2").value;
     var g3 = document.getElementById("grade3").value;
@@ -19,6 +24,11 @@ function compute(){
     var g8 = document.getElementById("grade8").value;
     var g9 = document.getElementById("grade9").value;
     var g10 = document.getElementById("grade10").value;
+    var g11 = document.getElementById("grade11").value;
+    var g12 = document.getElementById("grade12").value;
+    var g13 = document.getElementById("grade13").value;
+    var g14 = document.getElementById("grade14").value;
+    var g15 = document.getElementById("grade15").value;
     if (c1=="") c1=0;
     if (c2=="") c2=0;
     if (c3=="") c3=0;
@@ -29,6 +39,11 @@ function compute(){
     if (c8=="") c8=0;
     if (c9=="") c9=0;
     if (c10=="") c10=0;
+    if (c11=="") c11=0;
+    if (c12=="") c12=0;
+    if (c13=="") c13=0;
+    if (c14=="") c14=0;
+    if (c15=="") c15=0;
     if (g1=="") g1=0;
     if (g2=="") g2=0;
     if (g3=="") g3=0;
@@ -39,8 +54,13 @@ function compute(){
     if (g8=="") g8=0;
     if (g9=="") g9=0; 
     if (g10=="") g10=0;
-    var points = (c1*g1)+(c2*g2)+(c3*g3)+(c4*g4)+(c5*g5)+(c6*g6)+(c7*g7)+(c8*g8)+(c9*g9)+(c10*g10);
-    var credits =parseFloat(c1)+parseFloat(c2)+parseFloat(c3)+parseFloat(c4)+parseFloat(c5)+parseFloat(c6)+parseFloat(c7)+parseFloat(c8)+parseFloat(c9)+parseFloat(c10);
+    if (g11=="") g11=0;
+    if (g12=="") g12=0;
+    if (g13=="") g13=0;
+    if (g14=="") g14=0;
+    if (g15=="") g15=0;
+    var points = (c1*g1)+(c2*g2)+(c3*g3)+(c4*g4)+(c5*g5)+(c6*g6)+(c7*g7)+(c8*g8)+(c9*g9)+(c10*g10)+(c11*g11)+(c12*g12)+(c13*g13)+(c14*g14)+(c15*g15);
+    var credits =parseFloat(c1)+parseFloat(c2)+parseFloat(c3)+parseFloat(c4)+parseFloat(c5)+parseFloat(c6)+parseFloat(c7)+parseFloat(c8)+parseFloat(c9)+parseFloat(c10)+parseFloat(c11)+parseFloat(c12)+parseFloat(c13)+parseFloat(c14)+parseFloat(c15);
     var cgpa = points/credits;
     cgpa = cgpa.toFixed(2);
     if(cgpa=="NaN"){
