@@ -42,7 +42,6 @@ table{
     text-align: center;
 }
 #result{
-    position: fixed;
     line-height: 100px;
     font-size: 20px;
 }
